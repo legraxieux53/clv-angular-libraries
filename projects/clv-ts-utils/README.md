@@ -88,7 +88,8 @@ Check that a string is undefined
 ## thousandSeparator
 
     static thousandSeparator(value: string | number, decimalPre: number = 2,  mode: ThousandSeparatorMode = ThousandSeparatorMode.DEFAULT): string
-Formats a number by thousands separators
+Formats a number by thousands separators.
+Mode can be DEFAULT, DECIMAL_MANDATORY or DECIMAL_OPTIONAL
 
 ## roundDecimalNumber
 

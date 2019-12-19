@@ -1,6 +1,6 @@
 {
   "name": "clv-ts-utils",
-  "version": "1.0.0-rc-10",
+  "version": "1.0.0",
   "author": "Konan Wa Konan Néhémie",
   "keywords": ["angular", "utilities", "typescript", "file", "json", "csv", "typeof"],
   "peerDependencies": {

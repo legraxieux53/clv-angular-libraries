@@ -1,5 +1,4 @@
 import {ThousandSeparatorMode} from './thousand-separator-mode';
-import {ClvFilesUtils} from './clv-files-utils';
 
 //@dynamic
 export class ClvTsUtilsCommonsJs {
@@ -191,7 +190,7 @@ export class ClvTsUtilsCommonsJs {
    * Séparateur de milliers.
    */
   public static thousandSeparator(value: string | number, decimalPre: number = 2,
-                                  mode: ThousandSeparatorMode = ThousandSeparatorMode.DEFAULT): string {
+                                  mode: ThousandSeparatorMode | string = ThousandSeparatorMode.DEFAULT): string {
     const algo = (_strNbr: string) => {
       const nbrCharsDiv = 3;
       const positions = this.strNbrXChars(_strNbr, nbrCharsDiv);
@@ -210,10 +209,8 @@ export class ClvTsUtilsCommonsJs {
       switch (mode) {
         case ThousandSeparatorMode.DECIMAL_MANDATORY:
           return `0.0`;
-          break;
         case ThousandSeparatorMode.DECIMAL_OPTIONAL:
           return `0`;
-          break;
         default:
           return `0`;
       }
@@ -264,7 +261,7 @@ export class ClvTsUtilsCommonsJs {
     return value.substr(value.length - position * charLength, charLength);
   }
   public static strNbrXChars(value: string, charLength: number) {
-    return Math.round(value.length / charLength);
+    return Math.ceil(value.length / charLength);
   }
 
   /**
@@ -295,12 +292,5 @@ export class ClvTsUtilsCommonsJs {
     return arr.slice(0, arr.findIndex(v => v === item)).concat(
       arr.slice(arr.findIndex(v => v === item) + 1)
     );
-  }
-
-  /**
-   * @Deprecated: Use it from ClvFilesUtils
-   */
-  public static csvToJson(csv: string) {
-    return ClvFilesUtils.csvToJson(csv);
   }
 }

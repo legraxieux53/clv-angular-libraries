@@ -1,9 +1,9 @@
 {
   "name": "clv-angular-pipes-utilities",
-  "version": "1.0.0-rc-1",
+  "version": "1.0.0",
   "peerDependencies": {
     "@angular/common": "^8.2.8",
     "@angular/core": "^8.2.8",
-    "clv-ts-utils": "^1.0.0-rc-3"
+    "clv-ts-utils": "^1.0.0"
   }
 }

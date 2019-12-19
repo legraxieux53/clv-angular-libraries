@@ -1,24 +1,35 @@
-import {AfterViewInit, Directive, ElementRef, HostListener, OnInit} from '@angular/core';
+import {AfterViewInit, Directive, ElementRef, HostListener, Input, OnInit} from '@angular/core';
 import {ClvTsUtilsCommonsJs} from 'clv-ts-utils';
+import {AbstractControl} from '@angular/forms';
 
 @Directive({
     selector: '[clvSeparatorThousand]',
 })
 export class ClvSeparatorThousandDirective implements OnInit, AfterViewInit {
 
-    constructor(private el: ElementRef) {
+  control: AbstractControl;
+  @Input('separatorThousand') set separatorThousand(data: AbstractControl) {
+    try {
+      this.control = data;
+      data.setValue(ClvTsUtilsCommonsJs.separatorThousand(data.value));
+    } catch (e) {
     }
+  }
+  constructor(private el: ElementRef) {
+  }
 
-    ngOnInit(): void {
-        this.onKeyUp();
-    }
+  ngOnInit(): void {
+    this.onKeyUp();
+  }
 
-    ngAfterViewInit(): void {
-      this.onKeyUp();
-    }
+  ngAfterViewInit(): void {
+    this.onKeyUp();
+  }
 
   @HostListener('keyup') onKeyUp() {
-        this.el.nativeElement.value = ClvTsUtilsCommonsJs.separatorThousand(this.el.nativeElement.value);
-    }
+    try {
+      this.control.setValue(ClvTsUtilsCommonsJs.separatorThousand(this.control.value));
+    } catch (e) {}
+  }
 
 }
