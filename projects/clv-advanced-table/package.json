@@ -1,0 +1,9 @@
+{
+  "name": "clv-advanced-table",
+  "version": "1.0.3",
+  "peerDependencies": {
+    "@angular/common": "^8.2.8",
+    "@angular/core": "^8.2.8",
+    "@angular/material": "^8.2.2"
+  }
+}

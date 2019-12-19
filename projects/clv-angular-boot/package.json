@@ -1,0 +1,10 @@
+{
+  "name": "clv-angular-boot",
+  "version": "2.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.2.8",
+    "@angular/core": "^8.2.8",
+    "ngx-toastr": "^10.0.2",
+    "clv-ts-utils": "^1.0.0-rc-1"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "clv-ts-utils",
+  "version": "1.0.0-rc-10",
+  "author": "Konan Wa Konan Néhémie",
+  "keywords": ["angular", "utilities", "typescript", "file", "json", "csv", "typeof"],
+  "peerDependencies": {
+    "@angular/common": "^8.2.8",
+    "@angular/core": "^8.2.8"
+  },
+  "devDependencies": {
+    "xlsx": "^0.15.1"
+  }
+}

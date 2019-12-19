@@ -1,0 +1,34 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <button class="btn btn-default" (click)="asToast()">As Toast</button>
+      <button class="btn btn-default" (click)="asAlert()">As alert</button>
+      <button class="btn btn-default" (click)="asSnakeBar()">As Snake bar</button>
+      <button class="btn btn-default" (click)="asSnakeBarAction()">As Snake bar action</button>
+      <button class="btn btn-default" (click)="sendReq()">Send Request</button>
+    </div>
+  </div>
+<!--  <div class="row">-->
+<!--    <div class="col-md-6">-->
+<!--      <span>{{getDate()?.day}}</span>/-->
+<!--      <span>{{getDate()?.month + 1}}</span>/-->
+<!--      <span>{{getDate()?.year}}</span>&nbsp;-->
+<!--      <span>{{getDate()?.hour}}</span>:-->
+<!--      <span>{{getDate()?.minute}}</span>:-->
+<!--      <span>{{getDate()?.second}}</span>:-->
+<!--      <span>{{getDate()?.millisecond}}</span>&nbsp;-->
+<!--    </div>-->
+<!--  </div>-->
+  <div class="row">
+    <div class="col-md-12">
+      <app-form-test></app-form-test>
+    </div>
+  </div>
+  <div>
+    <app-table-test></app-table-test>
+  </div>
+</div>
+<router-outlet></router-outlet>
+
+<p-confirmDialog header="Confirmation" icon="pi pi-exclamation-triangle"></p-confirmDialog>

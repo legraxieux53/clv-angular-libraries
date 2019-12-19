@@ -1,0 +1,9 @@
+{
+  "name": "clv-angular-directives-utilities",
+  "version": "1.0.0-dev",
+  "peerDependencies": {
+    "@angular/common": "^8.2.8",
+    "@angular/core": "^8.2.8",
+    "clv-ts-utils": "^1.0.0-rc-3"
+  }
+}
