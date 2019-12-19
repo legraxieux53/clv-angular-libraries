@@ -5,7 +5,7 @@ import {ClvTsUtilsCommonsJs, ThousandSeparatorMode} from 'clv-ts-utils';
   name: 'clvThousandSeparator'
 })
 export class ClvThousandSeparatorPipe implements PipeTransform {
-  transform(value: any, decimalPre: number = 2, mode = ThousandSeparatorMode.DEFAULT): any {
+  transform(value: any, decimalPre: number = 2, mode: ThousandSeparatorMode | string = ThousandSeparatorMode.DEFAULT): any {
     return ClvTsUtilsCommonsJs.thousandSeparator(value, decimalPre, mode);
   }
 }

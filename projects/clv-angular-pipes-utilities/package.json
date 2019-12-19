@@ -1,6 +1,6 @@
 {
   "name": "clv-angular-pipes-utilities",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "peerDependencies": {
     "@angular/common": "^8.2.8",
     "@angular/core": "^8.2.8",
