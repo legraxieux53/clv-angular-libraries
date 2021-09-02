@@ -30,7 +30,7 @@
     "i": "^0.3.6",
     "ngx-toastr": "11.0.0",
     "npm": "6.11.3",
-    "object-path": "0.11.4",
+    "object-path": "0.11.6",
     "primeicons": "^2.0.0",
     "primeng": "^8.0.4",
     "quill": "^1.3.7",
